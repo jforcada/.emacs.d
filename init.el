@@ -3,6 +3,8 @@
 ;; Email: jaime.forcada.balaguer@gmail.com
 
 ;; TODO
+;; - Hidding the welcome screen on startup
+;; - Scale text with C-+ C--
 ;; - Add hook to couple symbols per major mode
 ;; - Show line numbers
 ;; - Mark vertical line for char limit
@@ -16,6 +18,9 @@
 (add-to-list 'load-path (concat emacs.d-dir "./common"))
 (add-to-list 'load-path (concat emacs.d-dir "./themes"))
 (add-to-list 'custom-theme-load-path (concat emacs.d-dir "./themes"))
+
+;; Assure that special input (like accent marks) work
+(require 'iso-transl)
 
 ;; Set up keybindings
 (require 'generic-key-bindings)
