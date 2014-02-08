@@ -4,13 +4,23 @@
 
 ;; higlight current line
 (global-hl-line-mode t)
+
 ;; deactivate cursor blink
 (blink-cursor-mode 0)
+
 ;; set menu bar, to get desktop copy/paste for example
-(menu-bar-mode 1)
+(menu-bar-mode t)
+
 ;; remove tool bar so we get 2 more editing lines
-(tool-bar-mode -1)
+(tool-bar-mode 0)
+
 ;; show column number in the mode line
-(column-number-mode 1)
+(column-number-mode t)
+
+;; show line number in the mode line
+(line-number-mode t)
+
+;; show line numbers in the left side
+(global-linum-mode t)
 
 (provide 'ui-config)

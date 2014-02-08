@@ -6,7 +6,6 @@
 ;; - Hidding the welcome screen on startup
 ;; - Scale text with C-+ C--
 ;; - Add hook to couple symbols per major mode
-;; - Show line numbers
 ;; - Mark vertical line for char limit
 ;; - Customizable indentation
 ;; - Don't activate mark when caps lock
@@ -19,7 +18,7 @@
 (add-to-list 'load-path (concat emacs.d-dir "./themes"))
 (add-to-list 'custom-theme-load-path (concat emacs.d-dir "./themes"))
 
-;; Assure that special input (like accent marks) work
+;; Assure that special input (like accent marks) works
 (require 'iso-transl)
 
 ;; Set up keybindings
