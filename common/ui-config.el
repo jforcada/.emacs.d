@@ -23,4 +23,7 @@
 ;; show line numbers in the left side
 (global-linum-mode t)
 
+;; disable startup screen
+(setq inhibit-startup-screen t)
+
 (provide 'ui-config)
