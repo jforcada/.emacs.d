@@ -17,9 +17,15 @@
 (add-to-list 'load-path (concat emacs.d-dir "./common"))
 (add-to-list 'load-path (concat emacs.d-dir "./themes"))
 (add-to-list 'custom-theme-load-path (concat emacs.d-dir "./themes"))
+(add-to-list 'load-path (concat emacs.d-dir "./modes"))
 
 ;; Assure that special input (like accent marks) works
 (require 'iso-transl)
+
+;; Initializing modes
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
 
 ;; Set up keybindings
 (require 'generic-key-bindings)
