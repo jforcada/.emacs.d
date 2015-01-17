@@ -54,3 +54,9 @@
 
 ;; Activate generic ui configuration
 (require 'ui-config)
+
+;; Add the MELPA package repository
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://stable.melpa.org/packages/") t)
+(package-initialize)
