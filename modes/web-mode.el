@@ -656,7 +656,7 @@ Must be used in conjunction with web-mode-enable-block-face."
     ("clip"             . "\\.ctml\\'")
     ("closure"          . "\\.soy\\'")
     ("ctemplate"        . "\\.\\(chtml\\|mustache\\)\\'")
-    ("django"           . "\\.\\(djhtml\\|tmpl\\|dtl\\|liquid\\)\\'")
+    ("django"           . "\\.\\(html\\|djhtml\\|tmpl\\|dtl\\|liquid\\)\\'")
     ("erb"              . "\\.\\(erb\\|rhtml\\|ejs\\|erb\\.html\\)\\'")
     ("freemarker"       . "\\.ftl\\'")
     ("go"               . "\\.go\\(html\\|tmpl\\)\\'")

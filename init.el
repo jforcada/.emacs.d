@@ -12,6 +12,7 @@
 ;; - Pair tags in html mode
 ;; - Full screen, text centered mode
 
+
 ;; Define the directories to load resources from
 (defvar emacs.d-dir (file-name-directory load-file-name))
 (add-to-list 'load-path (concat emacs.d-dir "./common"))
@@ -58,5 +59,5 @@
 ;; Add the MELPA package repository
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://stable.melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
