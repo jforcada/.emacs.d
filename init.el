@@ -65,3 +65,6 @@
 ;; Packages initialization
 (if (fboundp 'elpy-enable)
     (elpy-enable))
+
+(if (fboundp 'js2-mode)
+    (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)))
