@@ -12,6 +12,8 @@
 ;; - Pair tags in html mode
 ;; - Full screen, text centered mode
 
+;; Disable tabs indentation
+(setq-default indent-tabs-mode nil)
 
 ;; Define the directories to load resources from
 (defvar emacs.d-dir (file-name-directory load-file-name))
