@@ -12,8 +12,10 @@
 ;; - Pair tags in html mode
 ;; - Full screen, text centered mode
 
-;; Disable tabs indentation
+;; Disable tabs indentation by default...
 (setq-default indent-tabs-mode nil)
+;; ... if major mode forces tabs, set them to width=2
+(setq-default tab-width 2)
 
 ;; Define the directories to load resources from
 (defvar emacs.d-dir (file-name-directory load-file-name))
@@ -53,8 +55,8 @@
 (custom-set-variables
  '(custom-safe-themes (quote ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))))
 (custom-set-faces)
-;; (load-theme 'solarized-dark)
-(load-theme 'gotham t)
+(load-theme 'solarized-dark)
+;; (load-theme 'gotham t)
 
 ;; Activate generic ui configuration
 (require 'ui-config)
